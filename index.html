@@ -8,21 +8,36 @@
   
   <title>Frontend Mentor | Advice generator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  Advice #<!-- Advice ID goes here -->
-
-  "<!-- Advice text goes here -->"
-  
-  <div class="attribution">
+  <main>
+    <div class="card">
+      <div class="container">
+        <p class="header">ADVICE #<!-- Advice ID goes here --></p>
+        <p class="text">"<!-- Advice text goes here -->"</p>
+        <picture>
+              <source media="(max-width: 459px)" srcset="images/pattern-divider-mobile.svg">
+              <source media="(min-width: 460px)" srcset="images/pattern-divider-desktop.svg">
+              <img src="images/pattern-divider-desktop.svg" alt="divider">
+        </picture>
+      </div>
+      
+      <button type="submit" class="advice"> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+          fill="#202733" class="dice-icon" viewBox="0 0 24 24">
+          <path d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"/>
+        </svg>
+      </button>
+    </div>
+  </main>
+  <footer>
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://github.com/MinSalmy">MinSalmy</a>.
+  </footer>  
 </body>
 </html>
