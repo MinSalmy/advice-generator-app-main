@@ -4,7 +4,6 @@ const adviceURL = "https://api.adviceslip.com/advice";
     xhr method to get data 
 */
 function sendRequestXHR(method, url) {
-
     return new Promise( (resolve, reject) => {
         const xhr = new XMLHttpRequest();
         
